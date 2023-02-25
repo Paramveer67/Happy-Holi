@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Holi Page</title>
+	<style>
+		body {
+			background-color: #f7c5d5;
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			font-size: 36px;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin-top: 50px;
+		}
+		.box {
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+			background-color: #fff;
+			border-radius: 50%;
+			animation-name: bounce;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+			animation-direction: alternate;
+		}
+		.box:nth-child(1) {
+			animation-delay: 0s;
+			background-color: #ff8b94;
+		}
+		.box:nth-child(2) {
+			animation-delay: 0.2s;
+			background-color: #e5b5c5;
+		}
+		.box:nth-child(3) {
+			animation-delay: 0.4s;
+			background-color: #a3daff;
+		}
+		.box:nth-child(4) {
+			animation-delay: 0.6s;
+			background-color: #fffea3;
+		}
+		@keyframes bounce {
+			from {
+				transform: translateY(0);
+			}
+			to {
+				transform: translateY(-30px);
+			}
+		}
+		.button-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 50px;
+		}
+		.button {
+			background-color: #4CAF50;
+			border: none;
+			color: #fff;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 20px;
+			margin-top: 30px;
+			margin-right: 10px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Happy Holi!</h1>
+	<div class="container">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+	<div class="button-container">
+		<button class="button" onclick="alert('Happy Holi!')">Click Now</button>
+	</div>
+	<script>
+		// JavaScript code goes here
+	</script>
+</body>
+</html>
